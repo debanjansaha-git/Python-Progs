@@ -49,7 +49,7 @@ def send_email(from_email, email_pwd, receiver, email_subject, email_content):
     server.login(from_email, email_pwd)
 
     email = EmailMessage()
-    email['From'] = 'wethorahatke@gmail.com'
+    email['From'] = from_email
     email['To'] = receiver
     email['Subject'] = email_subject
     email.set_content(email_content)
